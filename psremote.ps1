@@ -1,3 +1,5 @@
+#@github.com/Seeps
+
 $computerhost = Read-Host -Prompt 'Please enter the hostname'
 $cred = get-credential
 $session = new-pssession -computername $computerhost -SessionOption (New-PSSessionOption -NoMachineProfile) -credential $cred
